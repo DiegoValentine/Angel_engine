@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+
+    background: #050505;
+
+    color: #d0d0d0;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   TERMINAL
+===================================================== */
+
+.terminal {
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 18px;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            #151515 0%,
+            #080808 70%,
+            #020202 100%
+        );
+
+    box-shadow:
+        inset 0 0 80px
+        rgba(255, 255, 255, 0.03);
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #444;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 15px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+.system-title {
+
+    font-weight: bold;
+}
+
+
+.system-status span {
+
+    color: #aaa;
+}
+
+
+/* =====================================================
+   SAÍDA DO TERMINAL
+===================================================== */
+
+#terminal-output {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding-right: 8px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    white-space: pre-wrap;
+}
+
+
+/* =====================================================
+   BARRA DE ROLAGEM
+===================================================== */
+
+#terminal-output::-webkit-scrollbar {
+
+    width: 5px;
+}
+
+
+#terminal-output::-webkit-scrollbar-thumb {
+
+    background: #444;
+}
+
+
+/* =====================================================
+   LINHAS DE COMANDO
+===================================================== */
+
+.command-line {
+
+    margin-bottom: 8px;
+}
+
+
+.command-line .user-command {
+
+    color: #eee;
+}
+
+
+/* =====================================================
+   RESPOSTAS
+===================================================== */
+
+.response {
+
+    margin-bottom: 18px;
+
+    white-space: pre-wrap;
+}
+
+
+.warning {
+
+    color: #aaa;
+}
+
+
+.error {
+
+    color: #999;
+}
+
+
+/* =====================================================
+   ÁREA DE INPUT
+===================================================== */
+
+.input-area {
+
+    display: flex;
+
+    align-items: center;
+
+    border-top: 1px solid #333;
+
+    padding-top: 12px;
+
+    margin-top: 10px;
+}
+
+
+.prompt {
+
+    margin-right: 8px;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+
+#commandInput {
+
+    flex: 1;
+
+    background: transparent;
+
+    border: none;
+
+    outline: none;
+
+    color: #ddd;
+
+    font-family:
+        "Courier New",
+        Courier,
+        monospace;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+footer {
+
+    margin-top: 10px;
+
+    text-align: center;
+
+    font-size: 9px;
+
+    color: #555;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   EFEITO CRT / SCANLINES
+===================================================== */
+
+.scanlines {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.025),
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   VINHETA / ESCURECIMENTO NAS BORDAS
+===================================================== */
+
+.terminal::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    box-shadow:
+        inset 0 0 100px
+        rgba(0, 0, 0, 0.8);
+
+    z-index: 9;
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .terminal {
+
+        padding: 12px;
+    }
+
+
+    header {
+
+        font-size: 10px;
+    }
+
+
+    #terminal-output {
+
+        font-size: 12px;
+    }
+
+
+    #commandInput {
+
+        font-size: 13px;
+    }
+
+
+    footer {
+
+        font-size: 7px;
+    }
+
+}
