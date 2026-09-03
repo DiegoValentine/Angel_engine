@@ -60,7 +60,7 @@ const pessoas = {
         },
 
         audio: {
-            arquivo: "audio/diego.mp3",
+            arquivo: "diego.mp3",
             inicio: 0,
             fim: 18
         },
@@ -105,7 +105,7 @@ const pessoas = {
         },
 
         audio: {
-            arquivo: "audio/romulo.mp3",
+            arquivo: "romulo.mp3",
             inicio: 0,
             fim: 20
         },
@@ -150,7 +150,7 @@ const pessoas = {
         },
 
         audio: {
-            arquivo: "audio/isabelle.mp3",
+            arquivo: "isabelle.mp3",
             inicio: 0,
             fim: 16
         },
@@ -195,7 +195,7 @@ const pessoas = {
         },
 
         audio: {
-            arquivo: "audio/alessandra.mp3",
+            arquivo: "alessandra.mp3",
             inicio: 0,
             fim: 15
         },
