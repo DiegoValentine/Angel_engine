@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ANGEL ENGINE // BABEL</title>
+
+    <link rel="stylesheet" href="angel.css">
+</head>
+
+<body>
+
+    <div class="crt">
+
+        <div class="scanlines"></div>
+        <div class="noise"></div>
+
+        <main class="terminal">
+
+            <header class="topbar">
+                <span>BABEL RESEARCH FACILITY // ARQUIVO CENTRAL</span>
+                <span id="clock">00:00:00</span>
+            </header>
+
+            <section class="header">
+
+                <div class="classification">
+                    █ CONFIDENCIAL // ACESSO NÍVEL 04
+                </div>
+
+                <h1>ANGEL ENGINE</h1>
+
+                <p>
+                    SISTEMA DE ARQUITETURA NEURAL // AE-01
+                </p>
+
+            </section>
+
+
+            <section class="status-grid">
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        SISTEMA
+                    </div>
+
+                    <div class="line">
+                        <span>NÚCLEO</span>
+                        <strong class="green">ONLINE</strong>
+                    </div>
+
+                    <div class="line">
+                        <span>ENERGIA</span>
+                        <strong id="energy">87%</strong>
+                    </div>
+
+                    <div class="line">
+                        <span>CONEXÃO NEURAL</span>
+                        <strong class="green">CONECTADA</strong>
+                    </div>
+
+                    <div class="line">
+                        <span>CONTENÇÃO</span>
+                        <strong class="red">INSTÁVEL</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        SUJEITO
+                    </div>
+
+                    <div class="subject">
+                        S-017
+                    </div>
+
+                    <div class="line">
+                        <span>BATIMENTOS</span>
+                        <strong id="heartbeat">117 BPM</strong>
+                    </div>
+
+                    <div class="line">
+                        <span>ATIVIDADE NEURAL</span>
+                        <strong>91%</strong>
+                    </div>
+
+                    <div class="line">
+                        <span>CONSCIÊNCIA</span>
+                        <strong class="red">DETECTADA</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        CARGA DO ENGINE
+                    </div>
+
+                    <div class="meter">
+                        <div id="engineMeter"></div>
+                    </div>
+
+                    <div class="meter-value" id="engineValue">
+                        73.4%
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="console" id="console">
+
+                <div id="output">
+
+                    <div>BABEL OS v6.17.4</div>
+                    <div>INICIALIZANDO ANGEL ENGINE...</div>
+
+                    <br>
+
+                    <div>
+                        NÚCLEO ................
+                        <span class="green">ONLINE</span>
+                    </div>
+
+                    <div>
+                        CONEXÃO NEURAL ........
+                        <span class="green">ESTABELECIDA</span>
+                    </div>
+
+                    <div>
+                        CONTENÇÃO .............
+                        <span class="red">INSTÁVEL</span>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        Bem-vindo, operador.
+                    </div>
+
+                    <div>
+                        Digite
+                        <span class="yellow">ajuda</span>
+                        para consultar os comandos.
+                    </div>
+
+                </div>
+
+
+                <div class="command-line">
+
+                    <span class="prompt">
+                        BABEL@ENGINE:~$
+                    </span>
+
+                    <input
+                        id="command"
+                        type="text"
+                        autocomplete="off"
+                        spellcheck="false"
+                        autofocus
+                    >
+
+                </div>
+
+            </section>
+
+
+            <footer>
+
+                <span>
+                    AE-01 // BABEL INTERNAL SYSTEM
+                </span>
+
+                <span class="red">
+                    NÃO DESCONECTE O ENGINE
+                </span>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="angel.js"></script>
+
+</body>
+
+</html>
